@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        col.cnome{
+            background-color: blueviolet;
+        }
+
+        col.cidade{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas </h1>
+
+    <colgroup>
+         
+         <col class="cnome">
+         <col class="csexo">
+         <col class="cidade">
+         <col class="cprof">
+
+    </colgroup>
+
+   <!-- <colgroup> 
+    (SPAN 2) PARA FORMATAR DUAS COLUNAS NA TABELA. NO CSS A FORMATAÇÃO CONTINUA A MSM.
+
+         <col class="cnome">
+         <col class="cgrupo" span="2">
+         <col class="cprof">
+    
+    </colgroup> -->
+
+    <table>
+        <caption>Cadastro</caption>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profisão</th>
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        
+        <tr>
+            <td>Aurora</td>
+            <td>F</td>
+            <td>23</td>
+            <td>Nutricionista</td>
+
+        </tr>
+
+        <tr>
+            <td>Guilherme</td>
+            <td>M</td>
+            <td>29</td>
+            <td>Fisioterapeuta</td>
+
+        </tr>
+
+        <tr>
+            <td>Marcelo</td>
+            <td>M</td>
+            <td>45</td>
+            <td>Apresentador</td>
+
+        </tr>
+        <tr>
+            <td>Jordana</td>
+            <td>F</td>
+            <td>19</td>
+            <td>Dentista</td>
+
+        </tr>
+    </table>
+</body>
+</html>
